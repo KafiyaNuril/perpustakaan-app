@@ -9,7 +9,6 @@ import Peminjaman from "../pages/peminjaman/Index";
 import Data from "../pages/peminjaman/Data";
 import PrivatePage from "../pages/middleware/PrivatePage";
 import Landing from "../pages/Landing";
-import Register from "../pages/Register";
 import Denda from "../pages/denda";
 
 export const router = createBrowserRouter([
@@ -23,13 +22,6 @@ export const router = createBrowserRouter([
                 element: <NotLogin />,
                 children: [
                     {path: "", element: <Login />}
-                ]
-            },
-            {
-                path: "/register",
-                element: <NotLogin />,
-                children: [
-                    { path: "", element: <Register /> }
                 ]
             },
             {element: <PrivatePage />,

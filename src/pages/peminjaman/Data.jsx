@@ -217,7 +217,7 @@ export default function Data() {
             <div className="d-flex justify-content-between">
                 <h1 className="mt-5" >Data Pengembalian</h1>
                 <div className="mt-5">
-                    <button className="btn btn-primary mt-5" onClick={exportExcel}>Export (.xlsx)</button>
+                    <button className="btn btn-success mt-5" onClick={exportExcel}>Export (.xlsx)</button>
                 </div>
             </div>
             <div className="rounded overflow-hidden mt-3">

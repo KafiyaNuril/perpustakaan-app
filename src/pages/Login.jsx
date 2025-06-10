@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { API_URL } from "../../constant";
 import axios from "axios";
 
 export default function Login() {
-    const location = useLocation();
     const [login, setLogin] = useState({
-        email:  location.state?.email || "",
-        password: Location.state?.password || "",
+        email: "",
+        password: "",
     });
     const [error, setError] = useState("");
     const navigate = useNavigate();
@@ -26,7 +25,7 @@ export default function Login() {
 
     return (
         <>
-        <div className="vh-100 d-flex justify-content-center align-items-center" style={{ fontFamily: "'Poppins', sans-serif", backgroundColor: "#f0f2f5" }}>
+        <div className="vh-100 d-flex justify-content-center align-items-center" style={{ fontFamily: "'Poppins', sans-serif"}}>
             <form className="card w-100 p-4 p-md-5 shadow-sm" style={{ maxWidth: "400px", borderRadius: "15px", backgroundColor: "white" }}  onSubmit={(e) => loginProcess(e)}>
                 <h2 className="text-center fw-bold" style={{ color: "#17a2b8" }}>Login</h2>
                 <hr className=" mb-4"/>
