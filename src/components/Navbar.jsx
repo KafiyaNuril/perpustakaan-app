@@ -56,12 +56,6 @@ export default function Navbar(){
                             </>  
                         ) : (
                             <>
-                            <li className="nav-item">
-                                <Link to="/login" className={`nav-link ${location.pathname === "/login" ? "active" : ""}`} aria-current="page">Login</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/register" className={`nav-link ${location.pathname === "/register" ? "active" : ""}`} aria-current="page">Register</Link>
-                            </li>
                             </>
                         )}
                     </ul>
